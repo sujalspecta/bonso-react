@@ -2,3 +2,49 @@ p {
   color: red;
 }
 /*# sourceMappingURL=style.css.map */
+
+
+/* Keep Swiper and its wrapper rigidly structured */
+.wpo-hero-slider, .swiper, .swiper-wrapper {
+    height: 100vh !important;
+    position: relative !important;
+}
+
+/* Clear theme absolute positioning conflicts on the container */
+.wpo-hero-slider .slide-inner {
+    position: relative !important;
+    width: 100%;
+    height: 100% !important;
+}
+
+
+/* FORCE VISIBILITY ON EVERYTHING */
+.wpo-hero-slider, 
+.swiper, 
+.swiper-wrapper, 
+.swiper-slide, 
+.slide-inner {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    height: 100vh !important;
+    min-height: 500px !important;
+}
+
+/* Ensure the background images actually show up */
+.slide-bg-image {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Make sure text container inside isn't hidden */
+.slide-content {
+    opacity: 1 !important;
+    visibility: visible !important;
+    position: relative;
+    z-index: 10;
+    padding-top: 15% !important; /* Pushes content down so it's visible */
+}
