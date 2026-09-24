@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import Slider from 'react-slick';
+import Sliderc from 'react-slick';
 import Navbar from '../../components/Navbar/Navbar'
 import PageTitle from '../../components/pagetitle/PageTitle'
 import Scrollbar from '../../components/scrollbar/scrollbar'
@@ -14,7 +14,7 @@ import Simg2 from "../../images/project-single/3.jpg"
 import Ssilde1 from "../..//images/project-single/1.jpg"
 import Ssilde2 from "../..//images/project-single/4.jpg"
 import Logo from '../../images/logo-2.svg'
-
+const Slider = Sliderc.default || Sliderc
 
 const ProjectSinglePage = (props) => {
     const { slug } = useParams()

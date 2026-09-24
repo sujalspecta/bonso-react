@@ -9,7 +9,14 @@ export default defineConfig({
       },
     }),
   ],
+   build: {
+    // Highlight-start
+    cssMinify: 'esbuild', // Switch from lightningcss to esbuild
+    // Highlight-end
+  },
   css: {
+     transformer: 'postcss', 
+    minify: 'esbuild' ,
     preprocessorOptions: {
       scss: {
         quietDeps: true,

@@ -1,7 +1,7 @@
 
 // images
 import React from "react";
-import Slider from "react-slick";
+import SliderC from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -11,6 +11,7 @@ import patn3 from '../../images/partners/3.png'
 import patn4 from '../../images/partners/4.png'
 import patn5 from '../../images/partners/5.png'
 
+const Slider = SliderC.default || SliderC
 const PartnersSecion = () => {
 
 

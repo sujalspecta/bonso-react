@@ -71,7 +71,7 @@
 
             @include media-query(1200px) {
                 font-size: 50px;
-                ont-size: calc-rem-value(50);
+                font-size: calc-rem-value(50);
             }
 
             @include media-query(991px) {

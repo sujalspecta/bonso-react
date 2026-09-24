@@ -1,6 +1,7 @@
 import React from 'react'
-import CountUp from 'react-countup';
+import CountUpc from 'react-countup';
 
+const CountUp = CountUpc.default || CountUpc
 const FunFact = (props) => {
     return (
         <section className="wpo-fun-fact-section section-padding">

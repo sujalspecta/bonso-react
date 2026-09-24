@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Slider from 'react-slick';
+import Sliderc from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import SectionTitle from "../SectionTitle/SectionTitle";
@@ -11,6 +11,8 @@ import image3 from '../../images/testimonial/3.jpg';
 import Shape1 from "../../images/testimonial/shape-1.png";
 import Shape2 from "../../images/testimonial/shape-2.png";
 import Shape3 from "../../images/testimonial/shape.svg";
+
+const Slider = Sliderc.default || Sliderc
 
 const TestimonialData = [
     {

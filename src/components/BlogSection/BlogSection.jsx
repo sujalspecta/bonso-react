@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Slider from "react-slick";
+import Sliderc from "react-slick";
 import blogs from '../../api/blogs'
 import SectionTitle from "../SectionTitle/SectionTitle";
 
 import Shape from "../../images/blog/shape.png";
+const Slider = Sliderc.default || Sliderc
 
 const ClickHandler = () => {
     window.scrollTo(10, 0);
